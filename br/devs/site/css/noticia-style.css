@@ -143,5 +143,9 @@ header h1{
     box-shadow: 15px -15px 0 #5f29a7;
  }
 
+ div{
+    position: relative;
+    margin-top: 240px;
+ }
 
 
