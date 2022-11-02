@@ -19,7 +19,6 @@ body{
     height: auto;
     background: #111010;
     width: 70px;
-    box-shadow: 10px 0 0 #5f29a7;
     border-left: 10px solid #111010;
     overflow-x: hidden;
     transition: 0.5;
