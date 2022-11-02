@@ -35,7 +35,7 @@ figure{
     display: inline-flex;
     padding: 2px;  
 }
-figcaption{
+figcaption {
     padding-top:20px ;
     padding-left: 10px;
 }
@@ -51,6 +51,7 @@ header h1{
 
 .navigation{
     margin-top: 80px;
+    margin-bottom: 60px ;
     position: relative;
     height: auto;
     background: #111010;
@@ -143,9 +144,39 @@ header h1{
     box-shadow: 15px -15px 0 #5f29a7;
  }
 
- div{
-    position: relative;
-    margin-top: 240px;
+ div .dados{
+    margin-top:130px;
  }
 
+ footer{
+    
+    padding-top: 30px;
+    height: 60px;
+    bottom: 0;
+    width: 100vw;
+    background: #111010;
+    position: fixed;
+    display: inline-flex;
+    justify-content:center;
+    align-items: center;
+ }
+ footer img{
+    margin-left: 20px;
+    height: 40px;
+ }
+footer h1{
+    font-family: titulo;
+    padding-top: 8px;
+    padding-left: 20px;
+    color: rgb(7, 90, 122);;
+    font-size: 25px;
+    text-align: center;
+}
+footer h3{
+    font-family: titulo;
+    padding-left: 20px;
+    padding-top:12px;
+    color: rgb(7, 90, 122);
+    text-align: center;
+}
 
