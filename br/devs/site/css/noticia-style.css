@@ -11,7 +11,7 @@ body{
     justify-content:left;
     align-items: left;
     min-height: 100vh;
-    background: #2d2d2d;
+    background-image: linear-gradient(to right,#000000fd, #020268d3,  #130707)
 }
 body header{
     height: 80px;
@@ -31,7 +31,10 @@ figcaption{
     padding-top:20px ;
     padding-left: 10px;
 }
-
+header h1{
+    color: aqua;;
+    text-shadow: 5px 5px 6px  rgb(48, 29, 70)
+}
 
 
 
