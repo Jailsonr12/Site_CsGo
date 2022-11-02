@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <title>Csgo da Depressão</title>
     <link rel="stylesheet" href="/br/devs/site/css/noticia-style.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-light bg-light">
-            <figure>
+            <figure class="foorter">
                 <img src="/br/devs/site/_img/logo.png" class="d-inline-block align-top" alt="logo">
                 <Figcaption class="topo">
                     <h1>Counter-Strike Global Da Depressão</h1>
@@ -22,62 +24,82 @@
         <ul>
             <li class="list active">
                 <a href="#">
-                    <span class="icon"><ion-icon name="home"></ion-icon></span>
+                    <span class="icon">
+                        <ion-icon name="home"></ion-icon>
+                    </span>
                     <span class="icon">Home</span>
                 </a>
             </li>
             <li class="list">
                 <a href="#">
-                    <span class="icon"><ion-icon name="newspaper"></ion-icon></span>
+                    <span class="icon">
+                        <ion-icon name="newspaper"></ion-icon>
+                    </span>
                     <span class="title">Noticia</span>
                 </a>
             </li>
             <li class="list">
                 <a href="#">
-                    <span class="icon"><ion-icon name="map"></ion-icon></span>
+                    <span class="icon">
+                        <ion-icon name="map"></ion-icon>
+                    </span>
                     <span class="title">Mpas</span>
                 </a>
             </li>
             <li class="list">
                 <a href="#">
-                    <span class="icon"><ion-icon name="briefcase"></ion-icon></span>
+                    <span class="icon">
+                        <ion-icon name="briefcase"></ion-icon>
+                    </span>
                     <span class="title">Nao a quem SUPORTE</span>
                 </a>
             </li>
             <li class="list">
                 <a href="#">
-                    <span class="icon"><ion-icon name="diamond"></ion-icon></span>
+                    <span class="icon">
+                        <ion-icon name="diamond"></ion-icon>
+                    </span>
                     <span class="title">Skin</span>
                 </a>
             </li>
             <li class="list">
                 <a href="#">
-                    <span class="icon"><ion-icon name="person-circle"></ion-icon></span>
+                    <span class="icon">
+                        <ion-icon name="person-circle"></ion-icon>
+                    </span>
                     <span class="title">login</span>
                 </a>
             </li>
             <div class="dados">
                 <li class="list-contato">
                     <a href="#">
-                        <span class="icon"><ion-icon name="logo-android"></ion-icon></span>
+                        <span class="icon">
+                            <ion-icon name="logo-android"></ion-icon>
+                        </span>
                         <span class="title">Desenvolvedores</span>
                     </a>
                 </li>
                 <li class="list-contato">
                     <a href="#">
-                        <span class="icon"><ion-icon name="logo-discord"></ion-icon></span>
+                        <span class="icon">
+                            <ion-icon name="logo-discord"></ion-icon>
+                        </span>
                         <span class="title">Discord</span>
                     </a>
                 </li>
                 <li class="list-contato">
-                <a href="#">
-                    <span class="icon"><ion-icon name="logo-instagram"></ion-icon></span>
-                    <span class="title">Instagram</span>
-                </a>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </span>
+                        <span class="title">Instagram</span>
+                    </a>
                 </li>
                 <li class="list-contato">
                     <a href="#">
-                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
                         <span class="title">Email</span>
                     </a>
                 </li>
@@ -85,33 +107,42 @@
             </div>
         </ul>
     </div>
-    <section>
-        
-    </section>
-    <main>
+    <div class="wrapper">
+        <section id="banner">
+            <figure>
+                <img src="/br/devs/site/_img/banner.jpg" alt="Banner" />
+                <figcaption class="title-banner">
+                    <h2 class="conteudo-banner">A Casa do Dragão</h2>
+                    <span class="pdescricao-destaque"> 16 de Outubro de 2022 </span>
+                    <article class="resumo-destaque">
+                    </article>
+                </figcaption>
 
-
-    </main>
-        <footer>
-            <div class="footer">
-                <figure>
-                    <img src="/br/devs/site/_img/logo.png" class="d-inline-block align-top" alt="logo">
-                        <h1 class="foorter">Sobre nos: </h1>
-                        <h3 class="foorter">Somos o maior site sobre a comunidade do Counter Strike Global, onde divulgamos e falamos sobre novas atualizações do jogo</h3>
-                </figure>
-            </div>
-        </footer>
+            </figure>
+        </section>
+    </div>
+    <footer>
+        <div class="footer">
+            <figure class="foorter">
+                <img src="/br/devs/site/_img/logo.png" class="d-inline-block align-top" alt="logo">
+                <h1 class="foorter">Sobre nos: </h1>
+                <h3 class="foorter">Somos o maior site sobre a comunidade do Counter Strike Global, onde divulgamos e
+                    falamos sobre novas atualizações do jogo</h3>
+            </figure>
+        </div>
+    </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>
         const list = document.querySelectorAll('.list');
-        function activeLink(){
-            list.forEach((item) => 
-            item.classList.remove('active'));
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
             this.classList.add('active')
         }
-            list.forEach((item) =>
+        list.forEach((item) =>
             item.addEventListener('click', activeLink));
     </script>
 </body>
+
 </html>

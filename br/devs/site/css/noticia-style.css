@@ -21,21 +21,23 @@ body{
     min-height: 100vh;
     background-image: linear-gradient(to right,#000000fd, #020268d3,  #130707);
 }
+
+    
 body header{
     height: 80px;
     width: 100vw;
     background: #111010;
-    position: absolute;
+    position: fixed;
     text-align: center;
     
 }
-figure{
+figure.foorter {
     margin-right: auto;
     height: 80px;
     display: inline-flex;
     padding: 2px;  
 }
-figcaption {
+header figcaption {
     padding-top:20px ;
     padding-left: 10px;
 }
@@ -147,7 +149,24 @@ header h1{
 div .dados{
     margin-top:130px;
 }
+/* Conteudo */
+.wrapper{
+    margin-top: 130px;
+    border: 1px solid #ccc;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+section{
+}
+#banner img{
+    
+}
+.title-banner{
+    
+}
 
+/* footer */
 footer{
     
     padding-top: 30px;
@@ -177,11 +196,6 @@ footer h3{
     padding-left: 20px;
     padding-top:12px;
     color: rgb(7, 90, 122);
-        ext-align: center;
+    text-align: center;
 }
-    
-main {
-    margin-top: 40px;
-}
-    
     
