@@ -7,11 +7,21 @@
     src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2) format('woff2');
     unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
 }
+@font-face {
+    font-family: 'conteudo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+  }
 
-*{margin: 0;
+*{  
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    list-style: none;
 }
 
 body{
@@ -22,7 +32,6 @@ body{
     background-image: linear-gradient(to right,#000000fd, #020268d3,  #130707);
 }
 
-    
 body header{
     height: 80px;
     width: 100vw;
@@ -148,18 +157,43 @@ div .dados{
 /* Conteudo */
 .wrapper{
     margin-top: 130px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(39, 27, 197);
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: inset 0 0 0.1em gold, 0 0 1em red; 
+    background-image: linear-gradient(to right,#471d69fd, #0d0d41d3,  #312366);
+    margin-bottom: 100px;
+
 }
 section{
+    border: 1px solid rgb(179, 170, 170);
+    color: rgb(194, 194, 194);
+    box-shadow: 2px 2px 2px black;
+    
 }
+
 #banner img{
+    box-shadow: 3px 3px 8px black;
+    margin: 15px;
+    border: 1px solid #ccc;
+    width: 620px;
     
 }
 .title-banner{
+    font-family: contudo;
+    margin-left: 15px;
+    width: 620px;
+    text-align: center;
+    border: 1px solid rgb(53, 33, 100);
+    box-shadow: 3px 3px 8px black;
+}
     
+.conteudo-banner{
+    padding: 10px;
+    border: 1px solid rgb(75, 45, 145);
+    box-shadow: 3px 3px 8px black;
+    margin-bottom: 10px;
 }
 
 /* footer */
@@ -178,6 +212,7 @@ footer{
 footer img{
     margin-left: 20px;
     height: 40px;
+    
  }
 footer h1{
     font-family: titulo;
@@ -188,10 +223,11 @@ footer h1{
     text-align: center;
 }
 footer h3{
+    font-size: 20px;
     font-family: titulo;
-    padding-left: 20px;
+    padding-left: 30px;
     padding-top:12px;
     color: rgb(7, 90, 122);
     text-align: center;
 }
-    
+
