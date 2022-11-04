@@ -25,13 +25,18 @@ $(document).ready(() => {
   // });
 });
 
+
 function verificarCheckBox() {
   var check = document.getElementsByClassName("verificar");
-  for (var i = 0; i < check.length; i++) {
+  let listaskin = document.getElementById("lista-skin").innerHTML
+  listaskin = "";
+  for (var i = 0; i < check.length; i++)  {
     if (check[i].checked) {
-      console.log(check[i].value);
-    } else {
-      // CheckBox Não Marcado... Faça alguma outra coisa...
+      listaskin += "<li>" + check[i].value + "</li>"
+      document.getElementById("lista-skin").innerHTML = listaskin
+    }else{
+
     }
   }
 }
+
