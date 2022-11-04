@@ -44,10 +44,17 @@ body header {
   text-align: center;
 }
 figure.foorter {
+<<<<<<< HEAD
   margin-right: auto;
   height: 80px;
   display: inline-flex;
   padding: 2px;
+=======
+    margin-right: auto;
+    height: 80px;
+    display: inline-flex;
+    padding: 2px;  
+>>>>>>> 18e1a958fbee7a6e9a028c2552278f4a6366cd21
 }
 figure.foorter img {
   margin-top: 10px;
@@ -241,6 +248,7 @@ footer {
   line-height: 28px;
   font-size: 14px;
 }
+<<<<<<< HEAD
 .footer-container p {
   text-align: center;
 }
@@ -249,6 +257,8 @@ footer {
   text-align: left;
   margin-left: 70px;
 }
+=======
+>>>>>>> 18e1a958fbee7a6e9a028c2552278f4a6366cd21
 
 .footer-bottom {
   background: rgb(11, 11, 11);
