@@ -237,3 +237,14 @@ footer {
     word-spacing: 6px;
     text-transform: capitalize;
 }
+.btn-group-toggle{
+    position: absolute;
+    display: flex;
+    justify-content:left;
+    align-items: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.botaotao{
+    border: 1px solid #fff;
+}
