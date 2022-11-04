@@ -280,5 +280,31 @@ footer {
     margin-left: 10px;
 }
 .botaotao{
-    border: 1px solid #fff;
+    background-image: #FFF;
+    
+}
+.modal-title{
+    text-align: center;
+    position: relative;
+    margin-left: 100px;
+}
+.modal-dialog{
+    background-color: whitesmoke;
+    background-image: linear-gradient(to right,#471d69fd, #0d0d41d3,  #312366);
+}
+
+#modal-container{
+    text-align: center;
+    bottom: 
+}
+#lista-skin{
+    background-image: linear-gradient(to right,#471d69fd, #0d0d41d3,  #312366);
+    border: 5px solid #000;
+    color: white;
+    padding: 10px;
+    
+}
+    
+#from-login{
+    background: #111010;
 }
