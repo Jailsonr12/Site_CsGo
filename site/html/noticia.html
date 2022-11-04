@@ -4,23 +4,22 @@
 <head>
     <link
       rel="shortcut icon"
-      href="/br/devs/site/_img/topo.png"
+      href="/_img/topo.png"
       type="image/x-icon"
     />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/br/devs/site/css/noticia-style.css">
+    <link rel="stylesheet" href="/css/noticia-style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>Csgo da Depressão</title>
 </head>
-
 <body>
     <header>
         <nav class=" ">
             <figure class="foorter">
-                <img src="/br/devs/site/_img/logo.png" class="" alt="logo">
+                <img src="/_img/logo.png" class="" alt="logo">
                 <Figcaption class="topo">
                     <h1>Counter-Strike Global Da Depressão</h1>
                 </Figcaption>
@@ -30,7 +29,7 @@
     <div class="navigation">
         <ul>
             <li class="list active">
-                <a href="#">
+                <a href="pag-home.html">
                     <span class="icon">
                         <ion-icon name="home"></ion-icon>
                     </span>
@@ -38,7 +37,7 @@
                 </a>
             </li>
             <li class="list">
-                <a href="#">
+                <a href="noticia.html">
                     <span class="icon">
                         <ion-icon name="newspaper"></ion-icon>
                     </span>
@@ -46,7 +45,7 @@
                 </a>
             </li>
             <li class="list">
-                <a href="#">
+                <a href="map.html">
                     <span class="icon">
                         <ion-icon name="map"></ion-icon>
                     </span>
@@ -54,7 +53,7 @@
                 </a>
             </li>
             <li class="list">
-                <a href="#">
+                <a href="suporte.html">
                     <span class="icon">
                         <ion-icon name="briefcase"></ion-icon>
                     </span>
@@ -62,7 +61,7 @@
                 </a>
             </li>
             <li class="list">
-                <a href="#">
+                <a href="skin.html">
                     <span class="icon">
                         <ion-icon name="diamond"></ion-icon>
                     </span>
@@ -74,9 +73,16 @@
                     <span class="icon">
                         <ion-icon name="person-circle"></ion-icon>
                     </span>
-                    <span class="title">login</span>
+                    <span class="title" onclick="loginForm()">login</span>
                 </a>
             </li>
+            <form id="login-form">
+                <input type="text" name="username" id="username" class="login-form-field" placeholder="username"/>
+                <input type="password" name="password" id="password" class="login-form-field"placeholder="senha"/>
+                <input type="button" value="login" id="login-form-submit"onclick="logar()";/>
+              </form>
+              <div id="logado">Logado com Sucesso</div>
+              <div id="logado-erro">Username ou senha inválidos</div>
             <div class="dados">
                 <li class="list-contato">
                     <a href="#">
@@ -110,7 +116,6 @@
                         <span class="title">Email</span>
                     </a>
                 </li>
-
             </div>
         </ul>
     </div>
@@ -118,7 +123,7 @@
         <section id="banner">
             <li>
                 <figure>
-                    <img src="/br/devs/site/_img/banner.jpg" alt="Banner" />
+                    <img src="/_img/banner.jpg" alt="Banner" />
                     <figcaption class="title-banner">
                         <h2 class="conteudo-banner">O que é o CS:GO?</h2>
                         <span class="pdescricao-destaque"> Counter-Strike: Global Offensive, mais famoso como CS:GO, é
@@ -136,7 +141,7 @@
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="/br/devs/site/_img/play.jpg "  alt="Banner" />
+                    <img src="/_img/play.jpg "  alt="Banner" />
                     <figcaption class="title-banner">
                         <h2 class="conteudo-banner">Como funciona o CS:GO?</h2>
                         <span class="pdescricao-destaque"> O jogo coloca dois times de cinco jogadores um contra o
@@ -173,7 +178,7 @@
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="/br/devs/site/_img/patente.png" alt="Banner" />
+                    <img src="/_img/patente.png" alt="Banner" />
                     <figcaption class="title-banner">
                         <h2 class="conteudo-banner">Como funcionam os rankings de CS:GO?</h2>
                         <span class="pdescricao-destaque"> Ao jogar CS:GO competitivamente, o jogo combinará jogadores e
@@ -190,7 +195,7 @@
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="/br/devs/site/_img/ak.jpeg" alt="Banner" />
+                    <img src="/_img/ak.jpeg" alt="Banner" />
                     <figcaption class="title-banner">
                         <h2 class="conteudo-banner">Quando as skins foram introduzidas no CS:GO</h2>
                         <span class="pdescricao-destaque"> As skins tornaram-se parte do CS:GO em agosto de 2013, a
@@ -204,7 +209,7 @@
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="/br/devs/site/_img/lore.jpg" alt="Banner" />
+                    <img src="/_img/lore.jpg" alt="Banner" />
                     <figcaption class="title-banner">
                         <h2 class="conteudo-banner">O que torna uma skin valiosa?</h2>
                         <span class="pdescricao-destaque"> Alguns fatores podem influenciar no preço de uma skin no
@@ -255,16 +260,7 @@
         crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script>
-        const list = document.querySelectorAll('.list');
-        function activeLink() {
-            list.forEach((item) =>
-                item.classList.remove('active'));
-            this.classList.add('active')
-        }
-        list.forEach((item) =>
-            item.addEventListener('click', activeLink));
-    </script>
+    <script src="../js/noticia-js.js"></script>
+    <script src="../js/login.js"></script>
 </body>
-
 </html>

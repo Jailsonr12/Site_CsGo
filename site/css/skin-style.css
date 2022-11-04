@@ -16,7 +16,7 @@
     unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
   }
 
-  *{  
+*{  
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -46,9 +46,6 @@ figure.foorter {
     display: inline-flex;
     padding: 2px;  
 }
-figure.foorter img {
-    margin-top: 10px;
-}
 header figcaption {
     padding-top:20px ;
     padding-left: 10px;
@@ -61,7 +58,6 @@ header h1{
 }
 .navigation{
     margin-top: 80px;
-    bottom: 1;
     margin-bottom: 60px ;
     position: relative;
     height: auto;
@@ -73,7 +69,6 @@ header h1{
 }
 
 .navigation:hover{
-    
     width: 300px;
     
 }
@@ -86,7 +81,6 @@ header h1{
     padding-left: 5px;
     padding-top: 40px;
 }
-
 .navigation ul li {
     position: relative;
     list-style: none;
@@ -95,7 +89,6 @@ header h1{
     border-bottom-left-radius: 20px ;
     
 }
-
 .navigation ul li a{
     position: relative;
     display: flex;
@@ -103,7 +96,6 @@ header h1{
     text-decoration: none;
     color: aqua;
 }
-
 .navigation ul li a .icon{
     position: relative;
     display: block;
@@ -112,13 +104,11 @@ header h1{
     text-align: center;
     line-height: 70px;
 }
-
 .navigation ul li a .icon ion-icon{
     position: relative;
     font-size: 1.5 rem;
     z-index: 1;
 }
-
 .navigation ul li a .title {
     position: relative;
     display: block;
@@ -127,11 +117,9 @@ header h1{
     line-height: 60px;
     white-space: nowrap;
 }
-
 .navigation ul li.active {
     background: #5f29a7;
 } 
-
 .navigation ul li.active a::before{
     content: '';
     position: absolute ;
@@ -143,7 +131,6 @@ header h1{
     border-radius: 50%;
     box-shadow: 15px 15px 0 #5f29a7;
 }
-
 .navigation ul li.active a::after{
     content: '';
     position: absolute ;
@@ -155,27 +142,81 @@ header h1{
     border-radius: 50%;
     box-shadow: 15px -15px 0 #5f29a7;
 }
-
+#login-form {
+    align-self: flex-start;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: none;
+  }
+  #login-form-submit:hover {
+    background: aqua;
+    color: rgb(3, 3, 3);
+    text-align: center;
+  }
+  
+  .login-form-field::placeholder {
+    color: #3a3a3a;
+  }
+  
+  .login-form-field {
+    border: none;
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0px 0px 5px 5px;
+  }
+  
+  #login-form-submit {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: #3a3a3a;
+    cursor: pointer;
+    outline: none;
+  }
+  #logado {
+    color: rgb(48, 235, 157);
+    text-align: center;
+    display: none;
+  }
+  #logado-erro {
+    color: rgb(241, 107, 87);
+    text-align: center;
+    display: none;
+  }
 div .dados{
     margin-top:130px;
 }
-/* Conteudo */
 .wrapper{
     margin-top: 130px;
     border: 1px solid rgb(39, 27, 197);
     display: flex;
-    margin-left: 560px;
+    margin-left: auto;
     margin-right: auto;
     box-shadow: inset 0 0 0.1em gold, 0 0 1em red; 
     background-image: linear-gradient(to right,#471d69fd, #0d0d41d3,  #312366);
     margin-bottom: 100px;
-
 }
 section{
+    display: flex;
     border: 1px solid rgb(179, 170, 170);
     color: rgb(194, 194, 194);
     box-shadow: 2px 2px 2px black;
-    
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width: 1000px) {
+    section {
+        display: block;
+    }
 }
 
 #banner img{
@@ -201,7 +242,6 @@ section{
     margin-bottom: 10px;
 }
 
-/* footer */
 footer {
     position: fixed;
     bottom: 0;
@@ -230,4 +270,15 @@ footer {
     font-size: 14px;
     word-spacing: 6px;
     text-transform: capitalize;
+}
+.btn-group-toggle{
+    position: absolute;
+    display: flex;
+    justify-content:left;
+    align-items: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.botaotao{
+    border: 1px solid #fff;
 }
